@@ -1,0 +1,32 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "December 2022 - August 2023 (9 months)",
+    title: "Full Stack Developer",
+    description:
+      "Corrective and evolutionary maintenance for a restaurant platform (React, React native, Typescript, Java, Quarkus, GitLab CI/CD, Docker, Kanban agile methodology).",
+    link: "https://www.docdoku.com/portfolio/popafood/",
+    linkDescription: "Oficial project website"
+  },
+  {
+    date: "February 2022 - August 2022 (6 months)",
+    title: "Front End Developer",
+    description:
+    "Corrective and evolutionary maintenance for a restaurant platform (React, React native, Typescript, Kanban agile methodology).",
+    link: "https://www.docdoku.com/portfolio/popafood/",
+    linkDescription: "Oficial project website"
+
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

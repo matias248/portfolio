@@ -1,0 +1,91 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import SocialContainer from "../components/SocialContainer.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Experience from "../components/Experience.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
+import Projects from "../components/Projects.astro";
+---
+
+<Layout
+  title="Matías Cabarcos Baulina portfolio - Junior Developer (1 year)"
+  description="Simple portfolio of a junior developer"
+>
+  <main class="px-4">
+    <SectionContainer id="aboutme" class="py-44 pb-32">
+      <img
+        class="rounded-full size-12 mb-4"
+        src="/matiasLinkedin.webp"
+        alt="matias photo"
+      />
+      <h1
+        class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        Hey, I am Matías <a
+          href="https://linkedin.com/in/matías-cabarcos-baulina-703250212"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Open to work</Badge>
+        </a>
+      </h1>
+      <h2
+        class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
+      >
+        <span>1 year of experience</span><span
+          class="text-yellow-800 dark:text-yellow-200"
+        >
+          Web Developer</span
+        >.<span class="text-red-800 dark:text-red-200">
+        Toulouse, France</span
+        >.
+        <span class="text-sky-800 dark:text-sky-200"
+          >MSc in Software Engineering</span
+        >
+      </h2>
+
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialContainer
+          href="https://linkedin.com/in/matías-cabarcos-baulina-703250212"
+        >
+          <LinkedInIcon class="size-4 md:size-6" />
+          LinkedIn
+        </SocialContainer>
+        <SocialContainer href="https://github.com/matias248">
+          <GitHubIcon class="size-4 md:size-6" />
+          GitHub
+        </SocialContainer>
+        <SocialContainer href="mailto:matias.andorra@gmail.com">
+          <MailIcon class="size-4 md:size-6" />
+          matias.andorra@gmail.com
+        </SocialContainer>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="experience">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <Briefcase class="size-7" />
+        Professional experience
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="projects">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        <CodeIcon class="size-7" />
+        Projects
+      </h2>
+      <Projects />
+    </SectionContainer>
+  </main>
+</Layout>
