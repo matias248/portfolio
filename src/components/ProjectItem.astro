@@ -44,7 +44,7 @@ const {
   technologiesBackEnd && (
     <p class="mb-2 text-base font-normal dark:text-gray-200 text-pretty">
       <span class="font-bold text-sky-800 dark:text-sky-200">Back End:</span>{" "}
-      {technologiesBackEnd}
+      {technologiesBackEnd} 
     </p>
   )
 }
@@ -58,12 +58,12 @@ const {
 }
 {
   linkDeploy && (
-    <p class="mb-2 text-base font-normal dark:text-gray-200 text-pretty">
+  <p class="mb-2 text-base font-normal dark:text-gray-200 text-pretty overflow-auto ">
       <span class="font-bold text-sky-800 dark:text-sky-200">
         Front End deployment:
       </span>{" "}
       <a
-        class="hover:bg-white/10 rounded-full px-3 transition underline"
+        class="hover:bg-white rounded-full px-3 transition underline"
         href={linkDeploy}
       >
         {linkDeploy}
@@ -73,12 +73,12 @@ const {
 }
 {
   linkGithubProject && (
-    <p class="mb-2 text-base font-normal dark:text-gray-200 text-pretty">
+    <p class="mb-2 text-base font-normal dark:text-gray-200 text-pretty overflow-auto ">
       <span class="font-bold text-sky-800 dark:text-sky-200">
         Project link:
       </span>{" "}
       <a
-        class="hover:bg-white/10 rounded-full px-3 transition underline"
+        class="hover:bg-white rounded-full px-3 transition underline"
         href={linkGithubProject}
       >
         {linkGithubProject}
